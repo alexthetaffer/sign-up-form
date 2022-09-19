@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #111;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: url(images/forest.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 510px;
+    min-height: 100vh;
+}
+
+.credit {
+    color: #ccc;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.credit a {
+    color: #ccc;
+}
+
+main {
+    margin-top: 152px;
+    margin-bottom: 152px;
+}
+
+p, h2 {
+    margin: 10px 40px 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 40rem;
+
+}
+
+h2 {
+    margin-top: 60px;
+}
+
+p.small {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 40px;
+
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.wrapper {
+    max-width: 1380px;
+    margin: 0 auto;
+    background-color: white;
+
+    display: flex;
+}
+
+button {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+img {
+    width: 90px;
+}
+
+.logo-bg {
+    margin-top: 214px;
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo-name {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
