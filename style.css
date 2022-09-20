@@ -5,16 +5,19 @@
 }
 
 body {
-    background-color: #111;
+    display: flex;
+
 }
+
 
 aside {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    flex-grow: 1;
 
-    background-image: url(images/forest.jpg);
+    background-image: url(images/rohit-tandon-9wg5jCEPBsw-unsplash.jpg);
     background-size: cover;
     background-position: center;
     min-width: 510px;
@@ -34,13 +37,15 @@ aside {
 main {
     margin-top: 152px;
     margin-bottom: 152px;
+    flex-grow: 5;
+    max-width: 1200px;
 }
 
 p, h2 {
     margin: 10px 40px 20px 40px;
     font-size: 20px;
     font-weight: bold;
-    max-width: 40rem;
+    max-width: 50rem;
 
 }
 
@@ -65,14 +70,6 @@ form {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 20px;
-}
-
-.wrapper {
-    max-width: 1380px;
-    margin: 0 auto;
-    background-color: white;
-
-    display: flex;
 }
 
 button {
