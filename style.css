@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&family=Montserrat:wght@100;400;700&display=swap');
+
+:root {
+    --accent-color: #667fa3;
+    --accent-color-dark: #4b5d77;
+    --error-color: rgb(218, 86, 86);
+    --active-field-color: rgb(66, 125, 202);
+    --shadow-light: 2px 2px 8px #aaa;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: jost, sans-serif;
 }
 
 body {
@@ -35,7 +45,7 @@ aside {
 }
 
 main {
-    margin-top: 152px;
+    margin-top: 158px;
     margin-bottom: 152px;
     flex-grow: 5;
     max-width: 1200px;
@@ -43,19 +53,21 @@ main {
 
 p, h2 {
     margin: 10px 40px 20px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    max-width: 50rem;
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 55rem;
 
 }
 
 h2 {
     margin-top: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 p.small {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .form-field {
@@ -69,21 +81,64 @@ p.small {
 form {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 20px;
+    gap: 18px 20px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+input {
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-weight: 600;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input.error {
+    border-color: var(--error-color);
+}
+
+input:focus {
+    border: 2px solid var(--active-field-color);
+    box-shadow: var(--shadow-light)
 }
 
 button {
     margin-left: 40px;
-    margin-top: 20px;
+    margin-top: 34px;
+    margin-bottom: 24px;
+    padding: 12px 40px;
+
+    background-color: var(--accent-color);
+    border-style: none;
+    border-radius: 7px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: var(--shadow-light);
 }
 
-img {
-    width: 90px;
+button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.shadow {
+    box-shadow: 0px 5px 10px -1px #ccc;
+    height: 30px;
+}
+
+#logo {
+    width: 280px;
 }
 
 .logo-bg {
     margin-top: 214px;
-    padding: 12px 0;
+    padding: 18px 0;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     display: flex;
@@ -99,3 +154,14 @@ img {
     font-weight: bold;
 }
 
+p.small a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+p.xs {
+    font-size: 12px;
+    color: var(--error-color);
+    margin: 0;
+    font-weight: 600;
+}

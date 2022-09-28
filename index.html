@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sign-up form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
 <body>
-        <aside>
+    <aside>
             <div class="logo-bg">
-                <img src="/images/odin-lined.png" alt="Logo">
-                <div class="logo-name">ODIN</div>
+                <img id="logo" src="/images/zeus-logo.svg" alt="Logo">
+                
             </div>
             <div class="credit">Photo by <a href="https://unsplash.com/@sepoys?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rohit Tandon</a> on <a href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
@@ -25,33 +29,35 @@
                 Sign up <em>now</em> to get started!</p>
             <p>You <em>know</em> you want to.</p>
             <h2>Let's do this!</h2>
-            <form action="example.com/path">
+            <form id="registration-form">
                 <div class="form-field">
                     <label for="first_name">FIRST NAME</label>
-                    <input type="text" name="first_name" id="first_name">
+                    <input maxlength="26" type="text" name="first_name" id="first_name" required>
                 </div>
                 <div class="form-field">
                     <label for="last_name">LAST NAME</label>
-                    <input type="text" name="last_name" id="last_name">
+                    <input maxlength="26" type="text" name="last_name" id="last_name" required>
                 </div>
                 <div class="form-field">
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div class="form-field">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone">
+                    <input pattern="+?\d{11}" type="tel" name="phone" id="phone" required>
                 </div>
                 <div class="form-field">
                     <label for="pw">PASSWORD</label>
-                    <input type="password" name="pw" id="pw">
+                    <input class="error" type="password" name="pw" id="pw" required>
+                    <p id="pw-validation-text" class="xs">*Passwords do not match</p>
                 </div>
                 <div class="form-field">
                     <label for="pw_confirm">CONFIRM PASSWORD</label>
-                    <input type="password" name="pw_confirm" id="pw_confirm">
+                    <input class="error" type="password" name="pw_confirm" id="pw_confirm" required>
                 </div>
             </form>
-            <button type="submit">Create Account</button>
+            <div class="shadow"></div>
+            <button type="submit" form="registration-form">Create Account</button>
             <p class="small">Already have an account? <a href="index.html">Log in</a></p>
         </main>
     </div>
