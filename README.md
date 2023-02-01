@@ -1,4 +1,4 @@
-# Sign-up Form Readme
+# Sign-up-form
 
 This is a sign-up form for a fake online service with the aim of realizing the user's deepest dreams.
 
